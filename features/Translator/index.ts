@@ -4,6 +4,9 @@
 // Types
 export * from './types';
 
+// Services
+export * from './services/historyService';
+
 // Store (to be implemented)
 // export { default as useTranslatorStore } from './store/useTranslatorStore';
 
