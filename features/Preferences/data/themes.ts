@@ -284,6 +284,7 @@ const baseThemeSets: BaseThemeGroup[] = [
         mainColor: 'oklch(55.0% 0.035 250.0 / 1)',
         secondaryColor: 'oklch(70.0% 0.015 90.0 / 1)',
       },
+
       {
         id: 'ramune-fizz',
         backgroundColor: 'oklch(85.00% 0.040 210.0 / 1)',
@@ -1265,6 +1266,18 @@ const baseThemeSets: BaseThemeGroup[] = [
         backgroundColor: 'oklch(22.0% 0.042 230.0 / 1)',
         mainColor: 'oklch(75.0% 0.135 225.0 / 1)',
         secondaryColor: 'oklch(82.0% 0.100 215.0 / 1)',
+      },
+      {
+        id: 'sumi-charcoal',
+        backgroundColor: 'oklch(18.0% 0.010 270.0 / 1)',
+        mainColor: 'oklch(78.0% 0.010 90.0 / 1)',
+        secondaryColor: 'oklch(45.0% 0.020 260.0 / 1)',
+      },
+      {
+        id: 'maple-lacquer',
+        backgroundColor: 'oklch(17.0% 0.035 20.0 / 1)',
+        mainColor: 'oklch(65.0% 0.215 30.0 / 1)',
+        secondaryColor: 'oklch(78.0% 0.135 70.0 / 1)',
       },
     ],
   },
