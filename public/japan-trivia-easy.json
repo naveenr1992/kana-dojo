@@ -1,5 +1,16 @@
 [
   {
+  "question": "Which month is traditionally associated with cherry blossom viewing (hanami) in Japan?",
+  "difficulty": "easy",
+  "answers": [
+    "January",
+    "April",
+    "July",
+    "October"
+  ],
+  "correctIndex": 1
+  },
+  {
     "question": "Which Japanese city is known for the historic Gion district?",
     "difficulty": "easy",
     "answers": ["Kyoto", "Osaka", "Sendai", "Saitama"],
