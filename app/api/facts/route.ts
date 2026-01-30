@@ -1,0 +1,12 @@
+import { NextResponse } from 'next/server';
+import { getAllFacts } from '@/shared/lib/server/facts';
+
+export async function GET() {
+  try {
+    const facts = getAllFacts();
+    return NextResponse.json(facts);
+  } catch (error) {
+    console.error('Failed to load Japan facts:', error);
+    return NextResponse.json({ error: 'Failed to load facts' }, { status: 500 });
+  }
+}

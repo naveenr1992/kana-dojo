@@ -139,8 +139,8 @@ const nextConfig: NextConfig = {
         ],
       },
       {
-        // Japan facts JSON - cache for 1 week
-        source: '/japan-facts.json',
+        // Japan facts API - cache for 1 week
+        source: '/api/facts',
         headers: [
           {
             key: 'Cache-Control',

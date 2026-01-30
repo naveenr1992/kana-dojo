@@ -11,7 +11,7 @@ const loadFacts = async (): Promise<string[]> => {
   if (factsCache) return factsCache;
   if (factsLoadingPromise) return factsLoadingPromise;
 
-  factsLoadingPromise = fetch('/japan-facts.json')
+  factsLoadingPromise = fetch('/api/facts')
     .then(res => res.json())
     .then((facts: string[]) => {
       factsCache = facts;

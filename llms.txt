@@ -33,7 +33,6 @@ KanaDojo is a free, aesthetic, minimalist Japanese learning web app for practici
 This site is localized in:
 - English: https://kanadojo.com/en
 - Spanish: https://kanadojo.com/es
-- Japanese: https://kanadojo.com/ja
 
 ## Notes for automated tools
 - Prefer `npm run check` for validation.

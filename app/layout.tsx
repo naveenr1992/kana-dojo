@@ -188,7 +188,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
         <link rel='prefetch' href='/data-kanji/decorations.json' as='fetch' />
         <link rel='prefetch' href='/data-kanji/N5.json' as='fetch' />
         <link rel='prefetch' href='/data-vocab/n5.json' as='fetch' />
-        <link rel='prefetch' href='/japan-facts.json' as='fetch' />
+        <link rel='prefetch' href='/api/facts' as='fetch' />
       </head>
       <body>
         {isAnalyticsEnabled && (

@@ -11,7 +11,12 @@ let factsCache: string[] | null = null;
 export function getAllFacts(): string[] {
   if (factsCache) return factsCache;
 
-  const factsPath = join(process.cwd(), 'public', 'japan-facts.json');
+  const factsPath = join(
+    process.cwd(),
+    'data',
+    'community',
+    'japan-facts.json',
+  );
   const factsData = readFileSync(factsPath, 'utf-8');
   factsCache = JSON.parse(factsData) as string[];
 

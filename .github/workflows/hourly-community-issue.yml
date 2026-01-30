@@ -2,7 +2,7 @@ name: Create Community Contribution Issue
 
 on:
   schedule:
-    - cron: '*/20 * * * *'
+    - cron: '*/15 * * * *'
   workflow_dispatch:
     inputs:
       force_type:
@@ -56,11 +56,15 @@ jobs:
             const dryRun = !!(context.payload.inputs && (context.payload.inputs.dry_run === true || context.payload.inputs.dry_run === 'true'));
 
             const emojiBank = [
-              '🎨', '🎋', '🎌', '🌸', '🌊', '🌙', '⭐', '🍜', '🍙', '🍵',
-              '🧭', '🧩', '🪄', '🪷', '🪭', '🎏', '🏮', '🗾', '⛩️', '🗻',
-              '🌧️', '⚡', '❄️', '🍂', '🍣', '🍡', '🥢', '🧧', '📚', '🖌️',
-              '🧵', '🎎', '🪙', '🛤️', '🚅', '🧪', '🧠', '🧶', '🪟', '🪨',
-              '🏯', '🏹', '🪁', '🐉', '🦊', '🐾', '🐼', '🦋', '🐟', '🪸'
+              '🎨', '🎋', '🎌', '🌸', '🌊', '🌙', '⭐', '🌟', '✨', '💫',
+              '🍜', '🍙', '🍵', '🍣', '🍡', '🍘', '🍱', '🥟', '🍥', '🥢',
+              '🧭', '🧩', '🧠', '🧪', '🧬', '🔬', '🧫', '🔭', '📚', '🖌️',
+              '�', '🧶', '🧷', '🪡', '�🪄', '🪷', '🪭', '🎏', '🎎', '🎐',
+              '🎴', '�', '🎆', '🎑', '🧧', '🪙', '�🏮', '🗾', '⛩️', '🗻',
+              '🌧️', '🌤️', '⛅', '⚡', '❄️', '🍂', '�', '�', '🌲', '🌳',
+              '🏯', '🏹', '�', '🚅', '🚄', '🚃', '🛤️', '�', '⛵', '�️',
+              '🐉', '🦊', '🐾', '�', '🦋', '🐟', '�', '�', '�', '�',
+              '�', '�', '🎻', '🎼', '🎧', '�', '�', '🗒️', '🧹', '�'
             ];
 
             function pickEmoji() {
@@ -76,16 +80,16 @@ jobs:
             const animeQuotesBacklogPath = 'data/community/anime-quotes-backlog.json';
 
             const themesSourcePath = 'features/Preferences/data/themes.ts';
-            const factsSourcePath = 'public/japan-facts.json';
-            const proverbsSourcePath = 'public/japanese-proverbs.json';
+            const factsSourcePath = 'data/community/japan-facts.json';
+            const proverbsSourcePath = 'data/community/japanese-proverbs.json';
             const triviaSourcePaths = {
-              easy: 'public/japan-trivia-easy.json',
-              medium: 'public/japan-trivia-medium.json',
-              hard: 'public/japan-trivia-hard.json'
+              easy: 'data/community/japan-trivia-easy.json',
+              medium: 'data/community/japan-trivia-medium.json',
+              hard: 'data/community/japan-trivia-hard.json'
             };
-            const triviaLegacyPath = 'public/japan-trivia.json';
-            const grammarSourcePath = 'public/japanese-grammar.json';
-            const animeQuotesSourcePath = 'public/anime-quotes.json';
+            const triviaLegacyPath = 'data/community/japan-trivia.json';
+            const grammarSourcePath = 'data/community/japanese-grammar.json';
+            const animeQuotesSourcePath = 'data/community/anime-quotes.json';
 
             let state = JSON.parse(fs.readFileSync(statePath, 'utf8'));
             const themes = JSON.parse(fs.readFileSync(themeBacklogPath, 'utf8'));

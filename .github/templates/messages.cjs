@@ -68,7 +68,7 @@ module.exports = {
     checklist: {
       title: '**Pre-merge checklist:**',
       items: [
-        'You starred our repo ⭐ and drank bubble tea 🍹',
+        'You starred our repo ⭐',
         'Code follows project style guidelines',
         'Changes have been tested locally',
         'PR title is descriptive',
@@ -144,10 +144,10 @@ module.exports = {
       nextSteps: {
         title: '**Next steps:**',
         items: [
-          'Fork this repository',
+          'Star our repo ⭐',
+          'Fork our repo 🍴',
           'Make the changes described above',
           'Submit a Pull Request linking to this issue (use `Closes #{issueNumber}`)',
-          'Star our repo ⭐ and drink some delicious bubble tea 🍹',
           'Wait for review!',
         ],
       },
@@ -244,7 +244,7 @@ module.exports = {
 
     theme: {
       title:
-        '[Good First Issue] {emoji} Add New Color Theme: {name} (good first issue)',
+        '[Good First Issue] {emoji} Add New Color Theme: {name} (good-first-issue)',
       header: '## 🎨 Add New Color Theme: "{name}"',
       category: 'Community Contribution - Theme',
       estimatedTime: '1 minute (good-first-issue!)',
@@ -260,7 +260,7 @@ module.exports = {
     },
     fact: {
       title:
-        '[Good First Issue] {emoji} Add Interesting, Cultural Fact about Japan {id} (good first issue)',
+        '[Good First Issue] {emoji} Add Interesting, Cultural Fact about Japan {id} (good-first-issue)',
       header: '## 🎋 Add New Japan Fact',
       category: 'Community Contribution - Fun Fact',
       estimatedTime: '1 minute (good-first-issue!)',
@@ -268,59 +268,59 @@ module.exports = {
         'Add this interesting fact about Japan to our collection!',
       factHeader: '### The Fact',
       // Use buildInstructions: filePath, itemType, prTitle
-      file: 'public/japan-facts.json',
+      file: 'data/community/japan-facts.json',
       itemType: 'fact',
       prTitle: 'content: add new japan fact',
     },
     proverb: {
       title:
-        '[Good First Issue] {emoji} Add New Japanese Proverb {id} (good first issue)',
+        '[Good First Issue] {emoji} Add New Japanese Proverb {id} (good-first-issue)',
       header: '## 🎌 Add Japanese Proverb (ことわざ)',
       category: 'Community Contribution - Proverb',
       estimatedTime: '1 minute (good-first-issue!)',
       taskDescription:
         'Add this traditional Japanese proverb to help learners understand Japanese wisdom!',
       proverbHeader: '### The Proverb',
-      file: 'public/japanese-proverbs.json',
+      file: 'data/community/japanese-proverbs.json',
       itemType: 'proverb object',
       prTitle: 'content: add new japanese proverb',
     },
     trivia: {
       title:
-        '[Good First Issue] {emoji} Add New Trivia Question {id} (good first issue)',
+        '[Good First Issue] {emoji} Add New Trivia Question {id} (good-first-issue)',
       header: '## 🧠 Add New Trivia Question',
       category: 'Community Contribution - Trivia',
       estimatedTime: '2 minutes (good-first-issue!)',
       taskDescription: 'Add this trivia question to our growing quiz bank!',
       triviaHeader: '### The Trivia Question',
-      // Trivia uses dynamic file path: public/{difficultyFile}
-      file: 'public/{difficultyFile}',
+      // Trivia uses dynamic file path: data/community/{difficultyFile}
+      file: 'data/community/{difficultyFile}',
       itemType: 'trivia object',
       prTitle: 'content: add new trivia question',
     },
     grammar: {
       title:
-        '[Good First Issue] {emoji} Add New Grammar Point {id} (good first issue)',
+        '[Good First Issue] {emoji} Add New Grammar Point {id} (good-first-issue)',
       header: '## 📖 Add New Grammar Point',
       category: 'Community Contribution - Grammar',
       estimatedTime: '2 minutes (good-first-issue!)',
       taskDescription:
         'Add this grammar explanation to our learner-friendly grammar list!',
       grammarHeader: '### The Grammar Point',
-      file: 'public/japanese-grammar.json',
+      file: 'data/community/japanese-grammar.json',
       itemType: 'grammar string',
       prTitle: 'content: add new grammar point',
     },
     animeQuote: {
       title:
-        '[Good First Issue] {emoji} Add Famous Anime Quote #{id} (good first issue)',
+        '[Good First Issue] {emoji} Add Famous Anime Quote #{id} (good-first-issue)',
       header: '## 🎬 Add Famous Anime Quote',
       category: 'Community Contribution - Anime Quote',
       estimatedTime: '2 minutes (good-first-issue!)',
       taskDescription:
         'Add this iconic anime quote so learners can enjoy Japanese pop culture!',
       quoteHeader: '### The Quote',
-      file: 'public/anime-quotes.json',
+      file: 'data/community/anime-quotes.json',
       itemType: 'anime quote object',
       prTitle: 'content: add anime quote',
     },
